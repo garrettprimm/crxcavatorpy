@@ -10,13 +10,13 @@ def main():
                         CLI utility for doing lookups against the crxcavator api
                         https://crxcavator.io/apidocs
                         """,
-        add_help=False
+        add_help=False,
     )
 
     main_parser.add_argument(
-        'action',
+        "action",
         choices=["report", "reports", "submit"],
-        help="Select one of the available actions"
+        help="Select one of the available actions",
     )
 
     main_args, _ = main_parser.parse_known_args()
@@ -25,9 +25,7 @@ def main():
 
     if main_args.action in ["reports", "submit"]:
         parser.add_argument(
-            "extension_id",
-            help="The extension id of the extension",
-            type=str
+            "extension_id", help="The extension id of the extension", type=str
         )
         args = parser.parse_args()
 
@@ -41,19 +39,13 @@ def main():
 
     elif main_args.action == "report":
         parser.add_argument(
-            "extension_id",
-            help="The extension id of the extension",
-            type=str
+            "extension_id", help="The extension id of the extension", type=str
         )
         parser.add_argument(
-            "extension_version",
-            help="The extension version of the extension",
-            type=str
+            "extension_version", help="The extension version of the extension", type=str
         )
         args = parser.parse_args()
-        reports = api.get_all_reports(
-            args.extension_id, args.extension_version
-        )
+        reports = api.get_all_reports(args.extension_id, args.extension_version)
         print(reports)
 
 

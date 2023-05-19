@@ -22,9 +22,7 @@ def get_report(extension_id: str, extension_version: str) -> dict:
 def submit_extension(extension_id: str) -> dict:
     endpoint = "submit/"
     full_url = f"{BASE_URL}{endpoint}"
-    data = {
-        "extension_id": extension_id
-    }
+    data = {"extension_id": extension_id}
     try:
         response = requests.post(url=full_url, json=data)
         submission_status = response.json()
