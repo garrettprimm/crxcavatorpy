@@ -7,7 +7,8 @@ def main():
     main_parser = argparse.ArgumentParser(
         prog="crxcavator",
         description="""
-                        CLI utility for doing lookups against the crxcavator api
+                        CLI utility for doing lookups against the crxcavator
+                        api
                         https://crxcavator.io/apidocs
                         """,
         add_help=False,
@@ -39,13 +40,18 @@ def main():
 
     elif main_args.action == "report":
         parser.add_argument(
-            "extension_id", help="The extension id of the extension", type=str
+            "extension_id",
+            help="The extension id of the extension",
+            type=str
         )
         parser.add_argument(
-            "extension_version", help="The extension version of the extension", type=str
+            "extension_version",
+            help="The extension version of the extension",
+            type=str
         )
         args = parser.parse_args()
-        reports = api.get_all_reports(args.extension_id, args.extension_version)
+        reports = api.get_all_reports(
+            args.extension_id, args.extension_version)
         print(reports)
 
 
