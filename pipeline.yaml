@@ -1,0 +1,9 @@
+resources:
+  repositories:
+    - repository: pipelines
+      type: git
+      name: BTS-InfoSec/pipelines
+      ref: dev # optional ref to pin to
+
+extends:
+    template: python/python-ci.yaml@pipelines
