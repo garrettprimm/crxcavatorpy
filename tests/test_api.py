@@ -6,16 +6,22 @@ extension_id = "lkhghipfmlbmmcamcamkhpjjggnlpani"
 extension_version = "10.1.2"
 
 
-class MockResponse:
+class ReportResponse:
     @staticmethod
     def json():
         return {"mock_key": "mock_response"}
 
 
+class AllReportsResponse:
+    @staticmethod
+    def json():
+        return [{"mock_key": "mock_response"}]
+
+
 @pytest.fixture
 def mock_get_report(monkeypatch):
     def mock_get(*args, **kwargs):
-        return MockResponse()
+        return ReportResponse()
 
     monkeypatch.setattr(requests, "get", mock_get)
 
@@ -23,7 +29,7 @@ def mock_get_report(monkeypatch):
 @pytest.fixture
 def mock_get_all_reports(monkeypatch):
     def mock_get(*args, **kwargs):
-        return MockResponse()
+        return AllReportsResponse()
 
     monkeypatch.setattr(requests, "get", mock_get)
 
@@ -33,6 +39,6 @@ def test_get_report(mock_get_report):
     assert type(result) is dict
 
 
-def test_get_all_reports(mock_get_report):
+def test_get_all_reports(mock_get_all_reports):
     result = api.get_report(extension_id, extension_version)
     assert type(result) is list
