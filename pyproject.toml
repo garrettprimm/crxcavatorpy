@@ -21,6 +21,11 @@ flake8 = "^6.0.0"
 pytest = "^7.3.1"
 pytest-mock = "^3.10.0"
 pytest-cov = "^4.0.0"
+artifacts-keyring = "^0.3.3"
+keyring = "^23.13.1"
+azure-devops-artifacts-helpers = "^1.2.0"
+twine = "^4.0.2"
+pytest-azurepipelines = "^1.0.4"
 
 [build-system]
 requires = ["poetry-core"]
