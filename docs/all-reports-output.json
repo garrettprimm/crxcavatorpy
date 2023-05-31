@@ -1,0 +1,2846 @@
+[
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/bubble_compiled.js": [
+              123
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/options_compiled.js": [
+              99
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/popup_compiled.js": [
+              108
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/main_compiled.js": [
+              41
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/popup_compiled.js": [
+              179,
+              180
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.runtime.onConnect": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/main_compiled.js": [
+              43
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/bubble_compiled.js": [
+              210
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/main_compiled.js": [
+              43
+            ]
+          },
+          "chrome.tabs.query": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/popup_compiled.js": [
+              180
+            ]
+          },
+          "window.addEventListener": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.10/main_compiled.js": [
+              15
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.google.com/?source=gtx_c#auto/",
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#"
+        ],
+        "manifest": {
+          "author": {
+            "email": "google-translate-chrome-extension-owners@google.com"
+          },
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.10",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ambcfpifajmjgfdaafnjdollbfemaeeg": {
+            "icon": "https://lh3.googleusercontent.com/Xa2gZmlaL9Fqst0AjuAEb_Oh7zVfKL6tRD9umb18a2JzAQdQmbx6wry2_sDigzAfjkAsn8UhFGAKyST4LSaj7xTj-g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "The Easy Translator",
+            "rating": 4.3382354,
+            "rating_users": 136,
+            "short_description": "Very easy in use translator.",
+            "users": 10000,
+            "platform": ""
+          },
+          "bocbaocobfecmglnmeaeppambideimao": {
+            "icon": "https://lh3.googleusercontent.com/5EVPhtKsQg-nKL0jNhZlyj5iGE6KuqHgwHHD1n1qrBs26OPPXAz1BIqowGMMaDXTSXKn7l8CTBAzkcXhFeE0LXuMNHE=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Edge Translate",
+            "rating": 4.6,
+            "rating_users": 195,
+            "short_description": "Translate what you want.",
+            "users": 100000,
+            "platform": ""
+          },
+          "bpggmmljdiliancllaapiggllnkbjocb": {
+            "icon": "https://lh3.googleusercontent.com/0urNkyTt1WFkwMdmYNWTZbX6N0ighldZymlFAzHTV6uvghuhfdmzbUogYsdhjI1CQlEZPVXMhiF66dqtWXwKf2nV=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Ddict Translate: Translator - Dictionary",
+            "rating": 4.2576,
+            "rating_users": 625,
+            "short_description": "Instantly translate sentences and look up words on website. Just by a mouse click or a keypress.",
+            "users": 100000,
+            "platform": ""
+          },
+          "condlopdddofpgcdjfnoepbdkcgckmgb": {
+            "icon": "https://lh3.googleusercontent.com/wddpHbYa27PjD492WEf_3IyO-O_pce5vn9qYnr8IECYuDbXO3cWu-55FcAW4HftGR-JHw5qOWa_ertBSzak4tYeB7Vk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.148148,
+            "rating_users": 27,
+            "short_description": "Right Click to translate selected text using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "debnnjfbneojbmioajinefnflopdohjk": {
+            "icon": "https://lh3.googleusercontent.com/Jha5sMc-CZ575BoEBkMDDoCv_Iw3YtNqcscb6U7ahTgR0nUlizbora-ndw7I320Wn-rNwaG22BGrO-7OtYpVR79QaQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "S3.Translator",
+            "rating": 4.532847,
+            "rating_users": 274,
+            "short_description": "Translation of selected text, introduced by a phrase or a fully web-site from any language to any language",
+            "users": 40000,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "dkpedpjjafnceedhomeijlphmjbblmdj": {
+            "icon": "https://lh3.googleusercontent.com/PIXv3J5lEz7d_A5AeJEP4BXbXveb829WSwVnEaMSqfw4Ijwz9l-tqbpHy5G5r1ZgYCgIEjvGcYeZvcNennB6VvBrGmY=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Currency Converter PRO",
+            "rating": 4.6519713,
+            "rating_users": 2359,
+            "short_description": "Currency converter for Google Chrome fast and easy to use.",
+            "users": 100000,
+            "platform": ""
+          },
+          "fapgabkkfcaejckbfmfcdgnfefbmlion": {
+            "icon": "https://lh3.googleusercontent.com/vkhzRoYtY3EJ_2mglLGN68wcSxwNXRuFYae6_ApnLy-khk5YcV1s8ARkr3-0fsenZttSEd9MbD4vlmSqiCXZ8rfpnw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Man",
+            "rating": 4.599138,
+            "rating_users": 232,
+            "short_description": "Mouse pointer translation, selected translation, support any languages, google translate api, human interface, love it",
+            "users": 10000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "gfgpkepllngchpmcippidfhmbhlljhoo": {
+            "icon": "https://lh3.googleusercontent.com/bxzrsXxtOzPLVd0IT41ng0Bjnr5KZ7WDkjsgAfzaFP-H0yPYmmEwd-Ykee3XRyeIb8HU-v-vHMtmWmh7sy9Dcgiwtw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "XTranslate",
+            "rating": 4.4794326,
+            "rating_users": 1410,
+            "short_description": "Translate texts within page context, customize your own style of popup block, and more.",
+            "users": 60000,
+            "platform": ""
+          },
+          "gjldcdngmdknpinoemndlidpcabkggco": {
+            "icon": "https://lh3.googleusercontent.com/BzuzXt7QbWsNHbgaeEW-nFe1inyQS4CtcY2QdXBbsyuf5ywVt4BEl3M1gluUVD1PTFv5hLMZ-NZJy9_7Ype5Zg1H08s=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Extension Manager",
+            "rating": 4.4156947,
+            "rating_users": 943,
+            "short_description": "Manage extensions, Quickly enable/disable, Support batching operation, Smart sorting. Fast, Simple and Secure.",
+            "users": 100000,
+            "platform": ""
+          },
+          "gnlibmlfpencglodjpgnalbdebfhpmfp": {
+            "icon": "https://lh3.googleusercontent.com/oYQNr2vROsi8Pm-HLetALn8a_2ZoND9y8cvshjBBhBzpam35k6w1C7ppqYU1YRPlaN1wyXbC7uMI4-qX-ysW6RhULQE=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Dualsub",
+            "rating": 3.8276923,
+            "rating_users": 325,
+            "short_description": "General purpose subtitle renderer",
+            "users": 100000,
+            "platform": ""
+          },
+          "ibplnjkanclpjokhdolnendpplpjiace": {
+            "icon": "https://lh3.googleusercontent.com/raXVd3563vuvNxGpZ9elq3Z5kmLIO5jzR_DxyGcgt-o6ArW1oylCobsHSbyt9LOn6u13NP_Q39G-Zo0Mq-V8TAkwV7I=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Simple Translate",
+            "rating": 4.537906,
+            "rating_users": 277,
+            "short_description": "Quickly translate selected or typed text on web pages. Supports Google Translate and DeepL API.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ihmgiclibbndffejedjimfjmfoabpcke": {
+            "icon": "https://lh3.googleusercontent.com/KXmUddCrKPajehxu3yhF58trK067jabY8D9s8sUj5UKrA_9Fs331uSuLH7j59YWhsrAcEm-oeuyopvuoBSj6vSju=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Mate Translate – translator, dictionary",
+            "rating": 4.333127,
+            "rating_users": 6460,
+            "short_description": "Your all-in-one translator for web pages, highlighted text, & Netflix subtitles. Translate and learn words in 103 languages.",
+            "users": 400000,
+            "platform": ""
+          },
+          "ijllcpnolfcooahcekpamkbidhejabll": {
+            "icon": "https://lh3.googleusercontent.com/3fQMRj3gigg_kS0CZoSYdclwWG3rjkhZGAvn7YYD0yXEPkvDfwAcCkZ1uypUmVeRo-IPoxb2ABvP0K8ZvgIr7R3uwzI=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "SimpRead - Reader View",
+            "rating": 4.811463,
+            "rating_users": 1989,
+            "short_description": "Immersion-reading mode of Chrome extensions, similar to Safari read mode.",
+            "users": 100000,
+            "platform": ""
+          },
+          "jmpepeebcbihafjjadogphmbgiffiajh": {
+            "icon": "https://lh3.googleusercontent.com/bteCH327OjvyszR0h8I_Ct7bsvuJLBfHNy_2naOe365LPCHzzMpxZPtY0qTtYofCK44T1-IHm_3UhvjguzYFZzo6Sg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Lingocloud - Web Translation Extension",
+            "rating": 4.0230412,
+            "rating_users": 434,
+            "short_description": "A bilingual translation extension that delivers a native reading experience at the Click of a button.",
+            "users": 200000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "lfmgfjbnbdobnciflclaceibkcailcac": {
+            "icon": "https://lh3.googleusercontent.com/chrome/webstore/images/thumb_128x128.png/w128-h128-e365-rj-sc0x00ffffff",
+            "name": "",
+            "rating": 4.1836734,
+            "rating_users": 1274,
+            "short_description": "",
+            "users": 200000,
+            "platform": ""
+          },
+          "mgijmajocgfcbeboacabfgobmjgjcoja": {
+            "icon": "https://lh3.googleusercontent.com/R2e7I-0MQgxeJ-dkkGfDxL2PWPcR3DTGhttSloJO70ax2N0TEtcT-AlmLcMAJZyHOhhqRTTpuJjO9qVs24DUDIMYVsk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Dictionary (by Google)",
+            "rating": 4.3629713,
+            "rating_users": 13665,
+            "short_description": "View definitions easily as you browse the web.",
+            "users": 4000000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "pambhihppeegkdociocppcaleohbbeef": {
+            "icon": "https://lh3.googleusercontent.com/L5xdayelhKfXTz23rSDA26osFHoWp1ngBs_HqwMt7a3aaYju01Amw3-0xjZdUVOwCi0qHH2AShYI4ZcMpa5eJ-GEk8A=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Simple Translate",
+            "rating": 3.357143,
+            "rating_users": 14,
+            "short_description": "This extension get simple translation for Chrome Browser",
+            "users": 20000,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pjnfggphgdjblhfjaphkjhfpiiekbbej": {
+            "icon": "https://lh3.googleusercontent.com/Ufj_cBX0e2yT9ku0dciOgZdb5Qdd8Y0ea3mmpSqv--URohAoxuk6q8pyC9CtmHdkFKGYP-hq-DtJ-L4AIHw9wucP=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Similar Pages",
+            "rating": 4.1755514,
+            "rating_users": 1088,
+            "short_description": "Discover webpages similar to the page you're currently browsing.",
+            "users": 100000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 406,
+          "webstore": {
+            "address": 1,
+            "last_updated": 5,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 8
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "",
+          "email": "earyee@google.com",
+          "icon": "https://lh3.googleusercontent.com/3ZU5aHnsnQUl9ySPrGBqe5LXz_z9DK05DEfk10tpKHv5cvG19elbOr0BdW_k8GjLMFDexT2QHlDwAmW62iLVdek--Q=w128-h128-e365-rj-sc0x00ffffff",
+          "last_updated": "2021-08-13",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [],
+          "privacy_policy": "",
+          "rating": 4.348145,
+          "rating_users": 43772,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "225KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.10",
+      "platform": "Chrome"
+    },
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/bubble_compiled.js": [
+              138
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/options_compiled.js": [
+              107
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/popup_compiled.js": [
+              122
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/main_compiled.js": [
+              40
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/popup_compiled.js": [
+              194,
+              195
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.runtime.onConnect": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/main_compiled.js": [
+              42
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/bubble_compiled.js": [
+              226
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/main_compiled.js": [
+              42
+            ]
+          },
+          "chrome.tabs.query": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/popup_compiled.js": [
+              195
+            ]
+          },
+          "window.addEventListener": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.11/main_compiled.js": [
+              14
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.google.com/?source=gtx_c#auto/",
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#"
+        ],
+        "manifest": {
+          "author": {
+            "email": "google-translate-chrome-extension-owners@google.com"
+          },
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.11",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ambcfpifajmjgfdaafnjdollbfemaeeg": {
+            "icon": "https://lh3.googleusercontent.com/Xa2gZmlaL9Fqst0AjuAEb_Oh7zVfKL6tRD9umb18a2JzAQdQmbx6wry2_sDigzAfjkAsn8UhFGAKyST4LSaj7xTj-g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "The Easy Translator",
+            "rating": 4.3382354,
+            "rating_users": 136,
+            "short_description": "Very easy in use translator.",
+            "users": 10000,
+            "platform": ""
+          },
+          "bocbaocobfecmglnmeaeppambideimao": {
+            "icon": "https://lh3.googleusercontent.com/5EVPhtKsQg-nKL0jNhZlyj5iGE6KuqHgwHHD1n1qrBs26OPPXAz1BIqowGMMaDXTSXKn7l8CTBAzkcXhFeE0LXuMNHE=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Edge Translate",
+            "rating": 4.6,
+            "rating_users": 195,
+            "short_description": "Translate what you want.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ccfjcepmiaackkccabgeeegeklgifffd": {
+            "icon": "https://lh3.googleusercontent.com/sG7fQbQGML23_zCjd-ydJ7h9AeAaxjXXtpi64HYPVQ2iNKeaY_mMmpI1e0ncKDw4-SJbxNR8hkoXiKyCrcO6nD-70A=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "百度翻译：网页翻译、海淘神器",
+            "rating": 2.9264705,
+            "rating_users": 68,
+            "short_description": "百度翻译官方出品。支持27种语言的翻译，浏览外文网页时可一键网页翻译、双语对照查看、查询单词结果等。特别针对20+家海淘网站进行过翻译优化，让你的海淘过程更加得心应手。",
+            "users": 30000,
+            "platform": ""
+          },
+          "condlopdddofpgcdjfnoepbdkcgckmgb": {
+            "icon": "https://lh3.googleusercontent.com/wddpHbYa27PjD492WEf_3IyO-O_pce5vn9qYnr8IECYuDbXO3cWu-55FcAW4HftGR-JHw5qOWa_ertBSzak4tYeB7Vk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.148148,
+            "rating_users": 27,
+            "short_description": "Right Click to translate selected text using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "debnnjfbneojbmioajinefnflopdohjk": {
+            "icon": "https://lh3.googleusercontent.com/Jha5sMc-CZ575BoEBkMDDoCv_Iw3YtNqcscb6U7ahTgR0nUlizbora-ndw7I320Wn-rNwaG22BGrO-7OtYpVR79QaQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "S3.Translator",
+            "rating": 4.532847,
+            "rating_users": 274,
+            "short_description": "Translation of selected text, introduced by a phrase or a fully web-site from any language to any language",
+            "users": 40000,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "edhchknefojhifoiebpcbkhcjlkkklci": {
+            "icon": "https://lh3.googleusercontent.com/WYnt2vzT6hSanAX4HgB8j_H-QzFXVoHoz0VVOzq-XCx3cCdYhmqHnvfoG4wK01aywviH-xRx5QnWoQUOldSSF1FF_g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "百度翻译：网页翻译、海淘神器",
+            "rating": 2.8235295,
+            "rating_users": 34,
+            "short_description": "百度翻译官方出品。支持27种语言的翻译，浏览外文网页时可一键网页翻译、双语对照查看、查询单词结果等。特别针对20+家海淘网站进行过翻译优化，让你的海淘过程更加得心应手。",
+            "users": 60000,
+            "platform": ""
+          },
+          "fapgabkkfcaejckbfmfcdgnfefbmlion": {
+            "icon": "https://lh3.googleusercontent.com/vkhzRoYtY3EJ_2mglLGN68wcSxwNXRuFYae6_ApnLy-khk5YcV1s8ARkr3-0fsenZttSEd9MbD4vlmSqiCXZ8rfpnw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Man",
+            "rating": 4.599138,
+            "rating_users": 232,
+            "short_description": "Mouse pointer translation, selected translation, support any languages, google translate api, human interface, love it",
+            "users": 10000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "gfgpkepllngchpmcippidfhmbhlljhoo": {
+            "icon": "https://lh3.googleusercontent.com/bxzrsXxtOzPLVd0IT41ng0Bjnr5KZ7WDkjsgAfzaFP-H0yPYmmEwd-Ykee3XRyeIb8HU-v-vHMtmWmh7sy9Dcgiwtw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "XTranslate",
+            "rating": 4.4794326,
+            "rating_users": 1410,
+            "short_description": "Translate texts within page context, customize your own style of popup block, and more.",
+            "users": 60000,
+            "platform": ""
+          },
+          "gjldcdngmdknpinoemndlidpcabkggco": {
+            "icon": "https://lh3.googleusercontent.com/BzuzXt7QbWsNHbgaeEW-nFe1inyQS4CtcY2QdXBbsyuf5ywVt4BEl3M1gluUVD1PTFv5hLMZ-NZJy9_7Ype5Zg1H08s=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Extension Manager",
+            "rating": 4.4156947,
+            "rating_users": 943,
+            "short_description": "Manage extensions, Quickly enable/disable, Support batching operation, Smart sorting. Fast, Simple and Secure.",
+            "users": 100000,
+            "platform": ""
+          },
+          "gobpkdmjnhpopmpddhmhmbhkiienpfdo": {
+            "icon": "https://lh3.googleusercontent.com/iOxdPA9fTUj4dwhXjEKK4Z77rVuWJX0cdhi7KNDd2h2ViyNHFv-_rXZ4oju0gr0lvMPjKRan0rH8rC8yezrb3SC4cA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Quick Translate",
+            "rating": 3.7794118,
+            "rating_users": 68,
+            "short_description": "This extension provides quick translation of selected texts",
+            "users": 20000,
+            "platform": ""
+          },
+          "ibplnjkanclpjokhdolnendpplpjiace": {
+            "icon": "https://lh3.googleusercontent.com/raXVd3563vuvNxGpZ9elq3Z5kmLIO5jzR_DxyGcgt-o6ArW1oylCobsHSbyt9LOn6u13NP_Q39G-Zo0Mq-V8TAkwV7I=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Simple Translate",
+            "rating": 4.537906,
+            "rating_users": 277,
+            "short_description": "Quickly translate selected or typed text on web pages. Supports Google Translate and DeepL API.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ihmgiclibbndffejedjimfjmfoabpcke": {
+            "icon": "https://lh3.googleusercontent.com/KXmUddCrKPajehxu3yhF58trK067jabY8D9s8sUj5UKrA_9Fs331uSuLH7j59YWhsrAcEm-oeuyopvuoBSj6vSju=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Mate Translate – translator, dictionary",
+            "rating": 4.333127,
+            "rating_users": 6460,
+            "short_description": "Your all-in-one translator for web pages, highlighted text, & Netflix subtitles. Translate and learn words in 103 languages.",
+            "users": 400000,
+            "platform": ""
+          },
+          "ijllcpnolfcooahcekpamkbidhejabll": {
+            "icon": "https://lh3.googleusercontent.com/3fQMRj3gigg_kS0CZoSYdclwWG3rjkhZGAvn7YYD0yXEPkvDfwAcCkZ1uypUmVeRo-IPoxb2ABvP0K8ZvgIr7R3uwzI=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "SimpRead - Reader View",
+            "rating": 4.811463,
+            "rating_users": 1989,
+            "short_description": "Immersion-reading mode of Chrome extensions, similar to Safari read mode.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ikhdkkncnoglghljlkmcimlnlhkeamad": {
+            "icon": "https://lh3.googleusercontent.com/9Zrg593RHZAvsCaUPI7smhXdRiBji6E01LHriDoixnZ3t0SmCigYOO_I0Y61mmWaRF1-Ol7ceKx3PUY9po-CxfGLb0w=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "划词翻译",
+            "rating": 4.5781546,
+            "rating_users": 1593,
+            "short_description": "一站式划词 / 截图 / 网页全文 / 音视频翻译扩展，支持谷歌、DeepL、ChatGPT、百度等 9 个国内外主流翻译服务，均可用于全文翻译。能在 PDF 里使用。",
+            "users": 300000,
+            "platform": ""
+          },
+          "jgpocibfamiaabfcecbphfjepfgcffmg": {
+            "icon": "https://lh3.googleusercontent.com/J1wkjvtcTjDTLSddtxPpv8Qtqf-bbUEgejLrEozrT4UWZW8OcoQ2n9sfE4LTaM60BWeFPLNuzM3wKbHuym48EsydSA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "1 Click Translator",
+            "rating": 3.840909,
+            "rating_users": 572,
+            "short_description": "Highlight the text you want to translate, and a translation popup will appear automatically.",
+            "users": 20000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "mgijmajocgfcbeboacabfgobmjgjcoja": {
+            "icon": "https://lh3.googleusercontent.com/R2e7I-0MQgxeJ-dkkGfDxL2PWPcR3DTGhttSloJO70ax2N0TEtcT-AlmLcMAJZyHOhhqRTTpuJjO9qVs24DUDIMYVsk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Dictionary (by Google)",
+            "rating": 4.3629713,
+            "rating_users": 13665,
+            "short_description": "View definitions easily as you browse the web.",
+            "users": 4000000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "oakgefkfepkkmiciglekhgfkhmognbih": {
+            "icon": "https://lh3.googleusercontent.com/himB1emT1MWwRUtAIlgIVADlyxNCTMB4ZpDgnXQ6iP9pOzAndU3u-9qM4z0rbIGqXi9oWJnb1zSjoBadhyGw1lbysg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "谷歌翻譯(正體中文)",
+            "rating": 4.3636365,
+            "rating_users": 176,
+            "short_description": "選取要翻譯的文字，然後點右鍵選擇。",
+            "users": 30000,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pjnfggphgdjblhfjaphkjhfpiiekbbej": {
+            "icon": "https://lh3.googleusercontent.com/Ufj_cBX0e2yT9ku0dciOgZdb5Qdd8Y0ea3mmpSqv--URohAoxuk6q8pyC9CtmHdkFKGYP-hq-DtJ-L4AIHw9wucP=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Similar Pages",
+            "rating": 4.1755514,
+            "rating_users": 1088,
+            "short_description": "Discover webpages similar to the page you're currently browsing.",
+            "users": 100000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 406,
+          "webstore": {
+            "address": 1,
+            "last_updated": 5,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 8
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "",
+          "email": "earyee@google.com",
+          "icon": "https://lh3.googleusercontent.com/3ZU5aHnsnQUl9ySPrGBqe5LXz_z9DK05DEfk10tpKHv5cvG19elbOr0BdW_k8GjLMFDexT2QHlDwAmW62iLVdek--Q=w128-h128-e365-rj-sc0x00ffffff",
+          "last_updated": "2022-01-18",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [],
+          "privacy_policy": "",
+          "rating": 4.346375,
+          "rating_users": 43834,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "227KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.11",
+      "platform": "Chrome"
+    },
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/bubble_compiled.js": [
+              144
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/options_compiled.js": [
+              113
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/popup_compiled.js": [
+              129
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/main_compiled.js": [
+              40
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/popup_compiled.js": [
+              203,
+              204
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.runtime.onConnect": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/main_compiled.js": [
+              42
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/bubble_compiled.js": [
+              234
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/main_compiled.js": [
+              42
+            ]
+          },
+          "chrome.tabs.query": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/popup_compiled.js": [
+              204
+            ]
+          },
+          "window.addEventListener": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.12/main_compiled.js": [
+              13
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.google.com/?source=gtx_c#auto/",
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#"
+        ],
+        "manifest": {
+          "author": {
+            "email": "google-translate-chrome-extension-owners@google.com"
+          },
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.12",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ambcfpifajmjgfdaafnjdollbfemaeeg": {
+            "icon": "https://lh3.googleusercontent.com/Xa2gZmlaL9Fqst0AjuAEb_Oh7zVfKL6tRD9umb18a2JzAQdQmbx6wry2_sDigzAfjkAsn8UhFGAKyST4LSaj7xTj-g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "The Easy Translator",
+            "rating": 4.3382354,
+            "rating_users": 136,
+            "short_description": "Very easy in use translator.",
+            "users": 10000,
+            "platform": ""
+          },
+          "bfbblfociapkankmiajlhmjkgbaoogon": {
+            "icon": "https://lh3.googleusercontent.com/njxr2BZ3428dGJI_qyU_skQFuh6hybP7Tdbc5BXu443Ysl177TK-Vw9uyFYXK9ca0TwnhP4GuH3VGumty2hOPx-FCA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "GTranslator",
+            "rating": 4.217949,
+            "rating_users": 78,
+            "short_description": "GTranslator",
+            "users": 30000,
+            "platform": ""
+          },
+          "bocbaocobfecmglnmeaeppambideimao": {
+            "icon": "https://lh3.googleusercontent.com/5EVPhtKsQg-nKL0jNhZlyj5iGE6KuqHgwHHD1n1qrBs26OPPXAz1BIqowGMMaDXTSXKn7l8CTBAzkcXhFeE0LXuMNHE=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Edge Translate",
+            "rating": 4.6,
+            "rating_users": 195,
+            "short_description": "Translate what you want.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ccfjcepmiaackkccabgeeegeklgifffd": {
+            "icon": "https://lh3.googleusercontent.com/sG7fQbQGML23_zCjd-ydJ7h9AeAaxjXXtpi64HYPVQ2iNKeaY_mMmpI1e0ncKDw4-SJbxNR8hkoXiKyCrcO6nD-70A=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "百度翻译：网页翻译、海淘神器",
+            "rating": 2.9264705,
+            "rating_users": 68,
+            "short_description": "百度翻译官方出品。支持27种语言的翻译，浏览外文网页时可一键网页翻译、双语对照查看、查询单词结果等。特别针对20+家海淘网站进行过翻译优化，让你的海淘过程更加得心应手。",
+            "users": 30000,
+            "platform": ""
+          },
+          "condlopdddofpgcdjfnoepbdkcgckmgb": {
+            "icon": "https://lh3.googleusercontent.com/wddpHbYa27PjD492WEf_3IyO-O_pce5vn9qYnr8IECYuDbXO3cWu-55FcAW4HftGR-JHw5qOWa_ertBSzak4tYeB7Vk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.148148,
+            "rating_users": 27,
+            "short_description": "Right Click to translate selected text using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "debnnjfbneojbmioajinefnflopdohjk": {
+            "icon": "https://lh3.googleusercontent.com/Jha5sMc-CZ575BoEBkMDDoCv_Iw3YtNqcscb6U7ahTgR0nUlizbora-ndw7I320Wn-rNwaG22BGrO-7OtYpVR79QaQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "S3.Translator",
+            "rating": 4.532847,
+            "rating_users": 274,
+            "short_description": "Translation of selected text, introduced by a phrase or a fully web-site from any language to any language",
+            "users": 40000,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "edhchknefojhifoiebpcbkhcjlkkklci": {
+            "icon": "https://lh3.googleusercontent.com/WYnt2vzT6hSanAX4HgB8j_H-QzFXVoHoz0VVOzq-XCx3cCdYhmqHnvfoG4wK01aywviH-xRx5QnWoQUOldSSF1FF_g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "百度翻译：网页翻译、海淘神器",
+            "rating": 2.8235295,
+            "rating_users": 34,
+            "short_description": "百度翻译官方出品。支持27种语言的翻译，浏览外文网页时可一键网页翻译、双语对照查看、查询单词结果等。特别针对20+家海淘网站进行过翻译优化，让你的海淘过程更加得心应手。",
+            "users": 60000,
+            "platform": ""
+          },
+          "fapgabkkfcaejckbfmfcdgnfefbmlion": {
+            "icon": "https://lh3.googleusercontent.com/vkhzRoYtY3EJ_2mglLGN68wcSxwNXRuFYae6_ApnLy-khk5YcV1s8ARkr3-0fsenZttSEd9MbD4vlmSqiCXZ8rfpnw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Man",
+            "rating": 4.599138,
+            "rating_users": 232,
+            "short_description": "Mouse pointer translation, selected translation, support any languages, google translate api, human interface, love it",
+            "users": 10000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "gfgpkepllngchpmcippidfhmbhlljhoo": {
+            "icon": "https://lh3.googleusercontent.com/bxzrsXxtOzPLVd0IT41ng0Bjnr5KZ7WDkjsgAfzaFP-H0yPYmmEwd-Ykee3XRyeIb8HU-v-vHMtmWmh7sy9Dcgiwtw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "XTranslate",
+            "rating": 4.4794326,
+            "rating_users": 1410,
+            "short_description": "Translate texts within page context, customize your own style of popup block, and more.",
+            "users": 60000,
+            "platform": ""
+          },
+          "gjldcdngmdknpinoemndlidpcabkggco": {
+            "icon": "https://lh3.googleusercontent.com/BzuzXt7QbWsNHbgaeEW-nFe1inyQS4CtcY2QdXBbsyuf5ywVt4BEl3M1gluUVD1PTFv5hLMZ-NZJy9_7Ype5Zg1H08s=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Extension Manager",
+            "rating": 4.4156947,
+            "rating_users": 943,
+            "short_description": "Manage extensions, Quickly enable/disable, Support batching operation, Smart sorting. Fast, Simple and Secure.",
+            "users": 100000,
+            "platform": ""
+          },
+          "gobpkdmjnhpopmpddhmhmbhkiienpfdo": {
+            "icon": "https://lh3.googleusercontent.com/iOxdPA9fTUj4dwhXjEKK4Z77rVuWJX0cdhi7KNDd2h2ViyNHFv-_rXZ4oju0gr0lvMPjKRan0rH8rC8yezrb3SC4cA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Quick Translate",
+            "rating": 3.7794118,
+            "rating_users": 68,
+            "short_description": "This extension provides quick translation of selected texts",
+            "users": 20000,
+            "platform": ""
+          },
+          "ibplnjkanclpjokhdolnendpplpjiace": {
+            "icon": "https://lh3.googleusercontent.com/raXVd3563vuvNxGpZ9elq3Z5kmLIO5jzR_DxyGcgt-o6ArW1oylCobsHSbyt9LOn6u13NP_Q39G-Zo0Mq-V8TAkwV7I=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Simple Translate",
+            "rating": 4.537906,
+            "rating_users": 277,
+            "short_description": "Quickly translate selected or typed text on web pages. Supports Google Translate and DeepL API.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ihmgiclibbndffejedjimfjmfoabpcke": {
+            "icon": "https://lh3.googleusercontent.com/KXmUddCrKPajehxu3yhF58trK067jabY8D9s8sUj5UKrA_9Fs331uSuLH7j59YWhsrAcEm-oeuyopvuoBSj6vSju=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Mate Translate – translator, dictionary",
+            "rating": 4.333127,
+            "rating_users": 6460,
+            "short_description": "Your all-in-one translator for web pages, highlighted text, & Netflix subtitles. Translate and learn words in 103 languages.",
+            "users": 400000,
+            "platform": ""
+          },
+          "ijllcpnolfcooahcekpamkbidhejabll": {
+            "icon": "https://lh3.googleusercontent.com/3fQMRj3gigg_kS0CZoSYdclwWG3rjkhZGAvn7YYD0yXEPkvDfwAcCkZ1uypUmVeRo-IPoxb2ABvP0K8ZvgIr7R3uwzI=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "SimpRead - Reader View",
+            "rating": 4.811463,
+            "rating_users": 1989,
+            "short_description": "Immersion-reading mode of Chrome extensions, similar to Safari read mode.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ikhdkkncnoglghljlkmcimlnlhkeamad": {
+            "icon": "https://lh3.googleusercontent.com/9Zrg593RHZAvsCaUPI7smhXdRiBji6E01LHriDoixnZ3t0SmCigYOO_I0Y61mmWaRF1-Ol7ceKx3PUY9po-CxfGLb0w=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "划词翻译",
+            "rating": 4.5781546,
+            "rating_users": 1593,
+            "short_description": "一站式划词 / 截图 / 网页全文 / 音视频翻译扩展，支持谷歌、DeepL、ChatGPT、百度等 9 个国内外主流翻译服务，均可用于全文翻译。能在 PDF 里使用。",
+            "users": 300000,
+            "platform": ""
+          },
+          "jgpocibfamiaabfcecbphfjepfgcffmg": {
+            "icon": "https://lh3.googleusercontent.com/J1wkjvtcTjDTLSddtxPpv8Qtqf-bbUEgejLrEozrT4UWZW8OcoQ2n9sfE4LTaM60BWeFPLNuzM3wKbHuym48EsydSA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "1 Click Translator",
+            "rating": 3.840909,
+            "rating_users": 572,
+            "short_description": "Highlight the text you want to translate, and a translation popup will appear automatically.",
+            "users": 20000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "mgijmajocgfcbeboacabfgobmjgjcoja": {
+            "icon": "https://lh3.googleusercontent.com/R2e7I-0MQgxeJ-dkkGfDxL2PWPcR3DTGhttSloJO70ax2N0TEtcT-AlmLcMAJZyHOhhqRTTpuJjO9qVs24DUDIMYVsk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Dictionary (by Google)",
+            "rating": 4.3629713,
+            "rating_users": 13665,
+            "short_description": "View definitions easily as you browse the web.",
+            "users": 4000000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pjnfggphgdjblhfjaphkjhfpiiekbbej": {
+            "icon": "https://lh3.googleusercontent.com/Ufj_cBX0e2yT9ku0dciOgZdb5Qdd8Y0ea3mmpSqv--URohAoxuk6q8pyC9CtmHdkFKGYP-hq-DtJ-L4AIHw9wucP=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Similar Pages",
+            "rating": 4.1755514,
+            "rating_users": 1088,
+            "short_description": "Discover webpages similar to the page you're currently browsing.",
+            "users": 100000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 405,
+          "webstore": {
+            "last_updated": 5,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 7
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "1600 Amphitheatre Pkwy\nMountain View, CA 94043\nUS",
+          "email": "google-translate-chrome-extension-owners@google.com",
+          "icon": "https://lh3.googleusercontent.com/3ZU5aHnsnQUl9ySPrGBqe5LXz_z9DK05DEfk10tpKHv5cvG19elbOr0BdW_k8GjLMFDexT2QHlDwAmW62iLVdek--Q=w128-h128-e365-rj-sc0x00ffffff",
+          "last_updated": "2022-03-09",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [],
+          "privacy_policy": "",
+          "rating": 4.350101,
+          "rating_users": 42085,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "232KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.12",
+      "platform": "Chrome"
+    },
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/bubble_compiled.js": [
+              135
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/options_compiled.js": [
+              110
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/popup_compiled.js": [
+              120
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/main_compiled.js": [
+              45
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/popup_compiled.js": [
+              224,
+              225
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.runtime.onConnect": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/main_compiled.js": [
+              47
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/bubble_compiled.js": [
+              257
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/main_compiled.js": [
+              47
+            ]
+          },
+          "chrome.tabs.query": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/popup_compiled.js": [
+              225
+            ]
+          },
+          "window.addEventListener": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.13/main_compiled.js": [
+              15
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "http://www.w3.org/1999/xhtml",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.google.com/?source=gtx_c#auto/",
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#"
+        ],
+        "manifest": {
+          "author": {
+            "email": "google-translate-chrome-extension-owners@google.com"
+          },
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.13",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "bebmphofpgkhclocdbgomhnjcpelbenh": {
+            "icon": "https://lh3.googleusercontent.com/1QZIHOib_idqcDW_92oMJUmaHdDltn9_c4xfomKqwy1yVJ4g3kNRPE5q4u2nJvM5fDF--Hq85WGXqW5xgP9LS1gwcQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator Pro - Quick Translate",
+            "rating": 4.534826,
+            "rating_users": 402,
+            "short_description": "Web page translator, translate text on any webpage instantly using Google Translate's advanced machine translation technology.",
+            "users": 400000,
+            "platform": ""
+          },
+          "bfbblfociapkankmiajlhmjkgbaoogon": {
+            "icon": "https://lh3.googleusercontent.com/njxr2BZ3428dGJI_qyU_skQFuh6hybP7Tdbc5BXu443Ysl177TK-Vw9uyFYXK9ca0TwnhP4GuH3VGumty2hOPx-FCA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "GTranslator",
+            "rating": 4.217949,
+            "rating_users": 78,
+            "short_description": "GTranslator",
+            "users": 30000,
+            "platform": ""
+          },
+          "bocbaocobfecmglnmeaeppambideimao": {
+            "icon": "https://lh3.googleusercontent.com/5EVPhtKsQg-nKL0jNhZlyj5iGE6KuqHgwHHD1n1qrBs26OPPXAz1BIqowGMMaDXTSXKn7l8CTBAzkcXhFeE0LXuMNHE=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Edge Translate",
+            "rating": 4.6,
+            "rating_users": 195,
+            "short_description": "Translate what you want.",
+            "users": 100000,
+            "platform": ""
+          },
+          "condlopdddofpgcdjfnoepbdkcgckmgb": {
+            "icon": "https://lh3.googleusercontent.com/wddpHbYa27PjD492WEf_3IyO-O_pce5vn9qYnr8IECYuDbXO3cWu-55FcAW4HftGR-JHw5qOWa_ertBSzak4tYeB7Vk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.148148,
+            "rating_users": 27,
+            "short_description": "Right Click to translate selected text using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "dkpedpjjafnceedhomeijlphmjbblmdj": {
+            "icon": "https://lh3.googleusercontent.com/PIXv3J5lEz7d_A5AeJEP4BXbXveb829WSwVnEaMSqfw4Ijwz9l-tqbpHy5G5r1ZgYCgIEjvGcYeZvcNennB6VvBrGmY=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Currency Converter PRO",
+            "rating": 4.6519713,
+            "rating_users": 2359,
+            "short_description": "Currency converter for Google Chrome fast and easy to use.",
+            "users": 100000,
+            "platform": ""
+          },
+          "fapgabkkfcaejckbfmfcdgnfefbmlion": {
+            "icon": "https://lh3.googleusercontent.com/vkhzRoYtY3EJ_2mglLGN68wcSxwNXRuFYae6_ApnLy-khk5YcV1s8ARkr3-0fsenZttSEd9MbD4vlmSqiCXZ8rfpnw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Man",
+            "rating": 4.599138,
+            "rating_users": 232,
+            "short_description": "Mouse pointer translation, selected translation, support any languages, google translate api, human interface, love it",
+            "users": 10000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "gfgpkepllngchpmcippidfhmbhlljhoo": {
+            "icon": "https://lh3.googleusercontent.com/bxzrsXxtOzPLVd0IT41ng0Bjnr5KZ7WDkjsgAfzaFP-H0yPYmmEwd-Ykee3XRyeIb8HU-v-vHMtmWmh7sy9Dcgiwtw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "XTranslate",
+            "rating": 4.4794326,
+            "rating_users": 1410,
+            "short_description": "Translate texts within page context, customize your own style of popup block, and more.",
+            "users": 60000,
+            "platform": ""
+          },
+          "gjldcdngmdknpinoemndlidpcabkggco": {
+            "icon": "https://lh3.googleusercontent.com/BzuzXt7QbWsNHbgaeEW-nFe1inyQS4CtcY2QdXBbsyuf5ywVt4BEl3M1gluUVD1PTFv5hLMZ-NZJy9_7Ype5Zg1H08s=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Extension Manager",
+            "rating": 4.4156947,
+            "rating_users": 943,
+            "short_description": "Manage extensions, Quickly enable/disable, Support batching operation, Smart sorting. Fast, Simple and Secure.",
+            "users": 100000,
+            "platform": ""
+          },
+          "gobpkdmjnhpopmpddhmhmbhkiienpfdo": {
+            "icon": "https://lh3.googleusercontent.com/iOxdPA9fTUj4dwhXjEKK4Z77rVuWJX0cdhi7KNDd2h2ViyNHFv-_rXZ4oju0gr0lvMPjKRan0rH8rC8yezrb3SC4cA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Quick Translate",
+            "rating": 3.7794118,
+            "rating_users": 68,
+            "short_description": "This extension provides quick translation of selected texts",
+            "users": 20000,
+            "platform": ""
+          },
+          "ibplnjkanclpjokhdolnendpplpjiace": {
+            "icon": "https://lh3.googleusercontent.com/raXVd3563vuvNxGpZ9elq3Z5kmLIO5jzR_DxyGcgt-o6ArW1oylCobsHSbyt9LOn6u13NP_Q39G-Zo0Mq-V8TAkwV7I=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Simple Translate",
+            "rating": 4.537906,
+            "rating_users": 277,
+            "short_description": "Quickly translate selected or typed text on web pages. Supports Google Translate and DeepL API.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ibppednjgooiepmkgdcoppnmbhmieefh": {
+            "icon": "https://lh3.googleusercontent.com/ml9TRX_BYQ8jPlOyxGXDsaAf5g8wBcQ5yroEtBzK8b6qFuq1PKTUel3LXTBXIN6Hr5p_Of1hEY3fIgF1zG168CnfTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Select to translate - Translator, Dictionary",
+            "rating": 4.45467,
+            "rating_users": 3651,
+            "short_description": "Translator for web pages. Translate words and phrases. Full page translator based on Google Translate.",
+            "users": 800000,
+            "platform": ""
+          },
+          "ihmgiclibbndffejedjimfjmfoabpcke": {
+            "icon": "https://lh3.googleusercontent.com/KXmUddCrKPajehxu3yhF58trK067jabY8D9s8sUj5UKrA_9Fs331uSuLH7j59YWhsrAcEm-oeuyopvuoBSj6vSju=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Mate Translate – translator, dictionary",
+            "rating": 4.333127,
+            "rating_users": 6460,
+            "short_description": "Your all-in-one translator for web pages, highlighted text, & Netflix subtitles. Translate and learn words in 103 languages.",
+            "users": 400000,
+            "platform": ""
+          },
+          "ijllcpnolfcooahcekpamkbidhejabll": {
+            "icon": "https://lh3.googleusercontent.com/3fQMRj3gigg_kS0CZoSYdclwWG3rjkhZGAvn7YYD0yXEPkvDfwAcCkZ1uypUmVeRo-IPoxb2ABvP0K8ZvgIr7R3uwzI=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "SimpRead - Reader View",
+            "rating": 4.811463,
+            "rating_users": 1989,
+            "short_description": "Immersion-reading mode of Chrome extensions, similar to Safari read mode.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ikhdkkncnoglghljlkmcimlnlhkeamad": {
+            "icon": "https://lh3.googleusercontent.com/9Zrg593RHZAvsCaUPI7smhXdRiBji6E01LHriDoixnZ3t0SmCigYOO_I0Y61mmWaRF1-Ol7ceKx3PUY9po-CxfGLb0w=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "划词翻译",
+            "rating": 4.5781546,
+            "rating_users": 1593,
+            "short_description": "一站式划词 / 截图 / 网页全文 / 音视频翻译扩展，支持谷歌、DeepL、ChatGPT、百度等 9 个国内外主流翻译服务，均可用于全文翻译。能在 PDF 里使用。",
+            "users": 300000,
+            "platform": ""
+          },
+          "jmpepeebcbihafjjadogphmbgiffiajh": {
+            "icon": "https://lh3.googleusercontent.com/bteCH327OjvyszR0h8I_Ct7bsvuJLBfHNy_2naOe365LPCHzzMpxZPtY0qTtYofCK44T1-IHm_3UhvjguzYFZzo6Sg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Lingocloud - Web Translation Extension",
+            "rating": 4.0230412,
+            "rating_users": 434,
+            "short_description": "A bilingual translation extension that delivers a native reading experience at the Click of a button.",
+            "users": 200000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "lmcboojgmmaafdmgacncdpjnpnnhpmei": {
+            "icon": "https://lh3.googleusercontent.com/QSLZ7v7QV_p6ES2RZwjIqUliQAvmePpxX1DopB76nvjVomd2u5Vh2I1ZY6i_iwbRzkwdGU8PrV7iif7uNkBnrf23=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Quick Translation",
+            "rating": 4.104762,
+            "rating_users": 105,
+            "short_description": "Quick and easy to use translation tool. Powered by Google Translate",
+            "users": 2000000,
+            "platform": ""
+          },
+          "mgijmajocgfcbeboacabfgobmjgjcoja": {
+            "icon": "https://lh3.googleusercontent.com/R2e7I-0MQgxeJ-dkkGfDxL2PWPcR3DTGhttSloJO70ax2N0TEtcT-AlmLcMAJZyHOhhqRTTpuJjO9qVs24DUDIMYVsk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Dictionary (by Google)",
+            "rating": 4.3629713,
+            "rating_users": 13665,
+            "short_description": "View definitions easily as you browse the web.",
+            "users": 4000000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pnpdnibdembnnlaiibkeandepjajegoi": {
+            "icon": "https://lh3.googleusercontent.com/aFx8-BXAAkm10OWrgvWUL-KCzO0PMjPfCKNauXIVqQi0rqzschQsqGetb_t1Tu_6hFS2uK_tPKWMSRDI64_-58jqbw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.290323,
+            "rating_users": 31,
+            "short_description": "Translate words and phrases while browsing the web, using Google translator.",
+            "users": 60000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 401,
+          "webstore": {
+            "last_updated": 1,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 3
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "1600 Amphitheatre Pkwy\nMountain View, CA 94043\nUS",
+          "email": "google-translate-chrome-extension-owners@google.com",
+          "icon": "https://lh3.googleusercontent.com/3ZU5aHnsnQUl9ySPrGBqe5LXz_z9DK05DEfk10tpKHv5cvG19elbOr0BdW_k8GjLMFDexT2QHlDwAmW62iLVdek--Q=w128-h128-e365-rj-sc0x00ffffff",
+          "last_updated": "2023-03-22",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [],
+          "privacy_policy": "",
+          "rating": 4.348397,
+          "rating_users": 42133,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "236KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.13",
+      "platform": "Chrome"
+    },
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "popup_compiled.js": [
+              1891
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "popup_compiled.js": [
+              4931,
+              4969
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.contextMenus.create": {
+            "main_compiled.js": [
+              998
+            ]
+          },
+          "chrome.runtime.onConnect": {
+            "main_compiled.js": [
+              991
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "bubble_compiled.js": [
+              6143
+            ],
+            "main_compiled.js": [
+              984
+            ]
+          },
+          "chrome.tabs.query": {
+            "popup_compiled.js": [
+              4957
+            ]
+          },
+          "window.addEventListener": {
+            "bubble_compiled.js": [
+              3224
+            ],
+            "main_compiled.js": [
+              293
+            ],
+            "options_compiled.js": [
+              656
+            ],
+            "popup_compiled.js": [
+              2636
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.googleapis.com",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "https://translate.google.com/?source=gtx_c#auto/"
+        ],
+        "manifest": {
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.7",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ambcfpifajmjgfdaafnjdollbfemaeeg": {
+            "icon": "https://lh3.googleusercontent.com/Xa2gZmlaL9Fqst0AjuAEb_Oh7zVfKL6tRD9umb18a2JzAQdQmbx6wry2_sDigzAfjkAsn8UhFGAKyST4LSaj7xTj-g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "The Easy Translator",
+            "rating": 4.3382354,
+            "rating_users": 136,
+            "short_description": "Very easy in use translator.",
+            "users": 10000,
+            "platform": ""
+          },
+          "bcefgmhpbmghjcenbklchobmogjhaagl": {
+            "icon": "https://lh3.googleusercontent.com/mY39SViHxEu2CQdFM5jGo4J1VtFZcDgZblS3NQFzMkQkUqNt08m7X6N5QDrMmQliy10hj--NC0gvL1W7dsOOmUOpdwA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Popup View for Google™ Translate",
+            "rating": 4.361446,
+            "rating_users": 83,
+            "short_description": "Access to a floating multilingual Google™ Translate popup on any webpage",
+            "users": 6000,
+            "platform": ""
+          },
+          "blndkmebkmenignoajhoemebccmmfjib": {
+            "icon": "https://lh3.googleusercontent.com/zmt5wrv0nL7kYkjVMYVFBwLcsaxtrFPpsXPNgECx4OOof4FfNao5Kr821wJHGZkzBs7O1xr-HA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.02625,
+            "rating_users": 800,
+            "short_description": "Translate selected or entered text",
+            "users": 90000,
+            "platform": ""
+          },
+          "bpggmmljdiliancllaapiggllnkbjocb": {
+            "icon": "https://lh3.googleusercontent.com/0urNkyTt1WFkwMdmYNWTZbX6N0ighldZymlFAzHTV6uvghuhfdmzbUogYsdhjI1CQlEZPVXMhiF66dqtWXwKf2nV=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Ddict Translate: Translator - Dictionary",
+            "rating": 4.2576,
+            "rating_users": 625,
+            "short_description": "Instantly translate sentences and look up words on website. Just by a mouse click or a keypress.",
+            "users": 100000,
+            "platform": ""
+          },
+          "cioclchdhgppnbpapkicbhlhbeldplld": {
+            "icon": "https://lh3.googleusercontent.com/PBFiG0rXAJm3GRl3gbrAlNi7VnK3NIJBbULBJ6r2oB2Q_cy6OJRHZbtsq0j4OaRAxqCGWhQiAjWyHDfq9W7l6CaiwrY=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "One-Click Translate Selection",
+            "rating": 2.9545455,
+            "rating_users": 22,
+            "short_description": "Simply select some text and translate from context menu",
+            "users": 9000,
+            "platform": ""
+          },
+          "diaogbjokdolnondliebjipfdimcjkfa": {
+            "icon": "https://lh3.googleusercontent.com/OyZhm_dtNNkNivIQY-4cld5tMSK4ajC0jkiTEeTbTpc8N7kcnrdbB-sg-6kE_22lEoBBxzFU-0g=w128-h128-e365",
+            "name": "Auto-Translate",
+            "rating": 3.7154472,
+            "rating_users": 123,
+            "short_description": "Automatically translate selection/mouseover text by google translate",
+            "users": 24690,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "eemleifbnibgnoifdjohpchdemidjibj": {
+            "icon": "https://lh3.googleusercontent.com/DI4T-Ed4PBeh5HJOX4e6Sgw69Hi0khzexGeedsOLFHpGJ6feayIbQEljNtMyoRfQcJLDpISv9_pM5eam9siUZiTe8Q=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Add links to change languages on Google™",
+            "rating": 4.0833335,
+            "rating_users": 60,
+            "short_description": "In order to add links, specify the languages in the option page.",
+            "users": 10000,
+            "platform": ""
+          },
+          "enljpjkjokokeigijfbogchbcfnkleak": {
+            "icon": "https://lh3.googleusercontent.com/wl6_9mBaDOLUsNKPpV1vBQb6rjGzUBBIX23cH2DV9Y440rmM5U4zYF41ldjvQ-jir_aQcVrjpKSkRU5cfd20IM_Z800=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate selection",
+            "rating": 3.8863637,
+            "rating_users": 44,
+            "short_description": "Translate selected text",
+            "users": 5000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "fbpgglmkehdiacglkflejohldbhekcjn": {
+            "icon": "https://lh3.googleusercontent.com/Y1AJRH9--I6QWrxVSilyEgZ2RJwqyG0uSMII45aFQq4qxmLFJ9jdMeOHA7vJPQNAaEVkCVNzdw=w128-h128-e365",
+            "name": "Translate Selection",
+            "rating": 4.0609417,
+            "rating_users": 361,
+            "short_description": "Translate the selected text!",
+            "users": 57825,
+            "platform": ""
+          },
+          "floipahigmmkfhkoapmnijnlnboniglg": {
+            "icon": "https://lh3.googleusercontent.com/ZxWXkPAbMHvIsw_7xOLXZNJXLTf2VmKN7krA1TqKGrl7zzK190Rk4OX8s7MiTbMy_iFOaRZZUk2Com7cCEk8dwOmrw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Highlight to Search",
+            "rating": 3.4161735,
+            "rating_users": 1014,
+            "short_description": "Highlight to Search allows you search keywords by highlighting instead of typing them into a search box.",
+            "users": 90000,
+            "platform": ""
+          },
+          "fmhiafgdfaglfbaaefbbolaholfhkmjc": {
+            "icon": "https://lh3.googleusercontent.com/wN9qtZXVSRyUGimI0lOn7r6bj2e1PcKIaYiHKjx1bs79-gNzztbN3yljgxRBAcYj4QSNnEY-DQ=w128-h128-e365",
+            "name": "Faster Google search",
+            "rating": 4.287037,
+            "rating_users": 108,
+            "short_description": " This extension helps in opening the Google result pages faster",
+            "users": 46462,
+            "platform": ""
+          },
+          "gfgpkepllngchpmcippidfhmbhlljhoo": {
+            "icon": "https://lh3.googleusercontent.com/bxzrsXxtOzPLVd0IT41ng0Bjnr5KZ7WDkjsgAfzaFP-H0yPYmmEwd-Ykee3XRyeIb8HU-v-vHMtmWmh7sy9Dcgiwtw=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "XTranslate",
+            "rating": 4.4794326,
+            "rating_users": 1410,
+            "short_description": "Translate texts within page context, customize your own style of popup block, and more.",
+            "users": 60000,
+            "platform": ""
+          },
+          "gmjdflobmjpeohnoefalpjeocgpdeffo": {
+            "icon": "https://lh3.googleusercontent.com/ObN5yU5eicD8gIEDTOsrh7FRoiiYm3ZJ3mPMcN6eKAYL9l0aunaQ-jqdDbfCQen3HuIJiB5PhA=w128-h128-e365",
+            "name": "Google Tasks Panel",
+            "rating": 3.9276018,
+            "rating_users": 221,
+            "short_description": "A Google Tasks panel in your Google Chrome browser",
+            "users": 74639,
+            "platform": ""
+          },
+          "hllpgofookedglcfhdimjhaahggbnlbe": {
+            "icon": "https://lh3.googleusercontent.com/X9blRv-u3k9lpVIcyMuH6Nx8NgCBpNvZUP2Jc1RTL3WOPrHa9_7ob1Ac0KYt9ZM3sgbVZ0_nhJzymNSSrRGZPY91sg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4,
+            "rating_users": 27,
+            "short_description": "Translates selected text into opted language.",
+            "users": 2000,
+            "platform": ""
+          },
+          "igjfjhnllcnodejjmjnofggkcpbofojp": {
+            "icon": "https://lh3.googleusercontent.com/VFtUMRgbp0nAfVV4iQQA-y-C77ceEhMSWWqx4cQVtCC5oVm-rSeW7q_bAfMCaaCP4-9HhCBX0ThLioTYmSpKwDnvQ_E=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Trans/lator",
+            "rating": 3.4285715,
+            "rating_users": 7,
+            "short_description": "Quickly translation inside your lovely Google Chrome™ browser",
+            "users": 2000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "nflhamjkngakbdnihackfkjoabknmooi": {
+            "icon": "https://lh3.googleusercontent.com/9uMrad0Y8J76D03WZinyioM0bZORoHdoaTwE9TXd2BqL0ibZyz_ajvRTTn29DpTF1skENEWqvWP_TcKWZ-HDY290UA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Highlight Search Keywords",
+            "rating": 3.2121212,
+            "rating_users": 33,
+            "short_description": "Highlight the keywords that you searched in google",
+            "users": 5000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "phlfmkfpmphogkomddckmggcfpmfchpn": {
+            "icon": "https://lh3.googleusercontent.com/w0Hbvv2L02nbkpOZEszDtOlYHPpBf-GUe2IHCwWINfPTxPW3H9D7DYdpgc9mhQYrXU9-mBhx=w128-h128-e365",
+            "name": "Context Menus",
+            "rating": 4.5126677,
+            "rating_users": 671,
+            "short_description": "The extended menu, integrated 300+ function menu and super drag links.",
+            "users": 51706,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pjnfggphgdjblhfjaphkjhfpiiekbbej": {
+            "icon": "https://lh3.googleusercontent.com/Ufj_cBX0e2yT9ku0dciOgZdb5Qdd8Y0ea3mmpSqv--URohAoxuk6q8pyC9CtmHdkFKGYP-hq-DtJ-L4AIHw9wucP=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Similar Pages",
+            "rating": 4.1755514,
+            "rating_users": 1088,
+            "short_description": "Discover webpages similar to the page you're currently browsing.",
+            "users": 100000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 407,
+          "webstore": {
+            "address": 1,
+            "email": 1,
+            "last_updated": 5,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 9
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "",
+          "email": "",
+          "icon": "https://lh3.googleusercontent.com/iaysb2R0atkr6DbSAhdN4bStgkYqm3F9rNaCLc3DxKoxvUYTKe4XynKGgiPqtlatTdreiFLMUw=w128-h128-e365",
+          "last_updated": "2017-10-18",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [
+            "Your data on all websites"
+          ],
+          "privacy_policy": "",
+          "rating": 4.403245,
+          "rating_users": 40985,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "216KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.7",
+      "platform": "Chrome"
+    },
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "popup_compiled.js": [
+              1865
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "popup_compiled.js": [
+              4548,
+              4586
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.contextMenus.create": {
+            "main_compiled.js": [
+              1061
+            ]
+          },
+          "chrome.runtime.onConnect": {
+            "main_compiled.js": [
+              1053
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "bubble_compiled.js": [
+              5771
+            ],
+            "main_compiled.js": [
+              1046
+            ]
+          },
+          "chrome.tabs.query": {
+            "popup_compiled.js": [
+              4574
+            ]
+          },
+          "window.addEventListener": {
+            "main_compiled.js": [
+              360
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "https://translate.google.com/?source=gtx_c#auto/",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.googleapis.com/translate_a/single"
+        ],
+        "manifest": {
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.8",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ambcfpifajmjgfdaafnjdollbfemaeeg": {
+            "icon": "https://lh3.googleusercontent.com/Xa2gZmlaL9Fqst0AjuAEb_Oh7zVfKL6tRD9umb18a2JzAQdQmbx6wry2_sDigzAfjkAsn8UhFGAKyST4LSaj7xTj-g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "The Easy Translator",
+            "rating": 4.3382354,
+            "rating_users": 136,
+            "short_description": "Very easy in use translator.",
+            "users": 10000,
+            "platform": ""
+          },
+          "bcefgmhpbmghjcenbklchobmogjhaagl": {
+            "icon": "https://lh3.googleusercontent.com/mY39SViHxEu2CQdFM5jGo4J1VtFZcDgZblS3NQFzMkQkUqNt08m7X6N5QDrMmQliy10hj--NC0gvL1W7dsOOmUOpdwA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Popup View for Google™ Translate",
+            "rating": 4.361446,
+            "rating_users": 83,
+            "short_description": "Access to a floating multilingual Google™ Translate popup on any webpage",
+            "users": 6000,
+            "platform": ""
+          },
+          "cioclchdhgppnbpapkicbhlhbeldplld": {
+            "icon": "https://lh3.googleusercontent.com/PBFiG0rXAJm3GRl3gbrAlNi7VnK3NIJBbULBJ6r2oB2Q_cy6OJRHZbtsq0j4OaRAxqCGWhQiAjWyHDfq9W7l6CaiwrY=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "One-Click Translate Selection",
+            "rating": 2.9545455,
+            "rating_users": 22,
+            "short_description": "Simply select some text and translate from context menu",
+            "users": 9000,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "eemleifbnibgnoifdjohpchdemidjibj": {
+            "icon": "https://lh3.googleusercontent.com/DI4T-Ed4PBeh5HJOX4e6Sgw69Hi0khzexGeedsOLFHpGJ6feayIbQEljNtMyoRfQcJLDpISv9_pM5eam9siUZiTe8Q=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Add links to change languages on Google™",
+            "rating": 4.0833335,
+            "rating_users": 60,
+            "short_description": "In order to add links, specify the languages in the option page.",
+            "users": 10000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "gfoljmaemjkooglhbobaiihlhlcdfeif": {
+            "icon": "https://lh3.googleusercontent.com/9DvWQEHE9gh_4BV_boQjZNYb9AhGHd5VsxWDA2YnGeVvzMN8ed-wrTY4nVa1jmb92q6Gqd5RHVEbv1zAnCd0kI7y3Q=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "GTranslate",
+            "rating": 4.019231,
+            "rating_users": 52,
+            "short_description": "RightClick google translate",
+            "users": 3000,
+            "platform": ""
+          },
+          "hkbmajmmaeonfhjdcofabfilgfigpbao": {
+            "icon": "https://lh3.googleusercontent.com/YJdjjB31lEAN7EYolhOtYSnw3nxPfoNHMWbzOMmXlo92z-3lIyI87Fkc5yvVe-XhZQaf7lPiWrzjYZEFG-Sr-sCYh9c=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Select to Translate - Translator",
+            "rating": 3.8715596,
+            "rating_users": 327,
+            "short_description": "Translate the selected text with Google Translate",
+            "users": 60000,
+            "platform": ""
+          },
+          "hllpgofookedglcfhdimjhaahggbnlbe": {
+            "icon": "https://lh3.googleusercontent.com/X9blRv-u3k9lpVIcyMuH6Nx8NgCBpNvZUP2Jc1RTL3WOPrHa9_7ob1Ac0KYt9ZM3sgbVZ0_nhJzymNSSrRGZPY91sg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4,
+            "rating_users": 27,
+            "short_description": "Translates selected text into opted language.",
+            "users": 2000,
+            "platform": ""
+          },
+          "icdahkkjdchifpnbebileaelbcgipepe": {
+            "icon": "https://lh3.googleusercontent.com/U_u1b2faOsxffaWRy8pWu7XGZ6zRyLRcsEnmAMD0sc7phfKFPWgOIpCB5Q0bEQywoQnlTN0XboUTCbsoYspsgNz1qA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "브릿지 번역 앱",
+            "rating": 4.633803,
+            "rating_users": 71,
+            "short_description": "번역기의 일본어와의 번역결과가 훌륭한 것을 이용한 번역결과 향상 앱 입니다.",
+            "users": 5000,
+            "platform": ""
+          },
+          "igjfjhnllcnodejjmjnofggkcpbofojp": {
+            "icon": "https://lh3.googleusercontent.com/VFtUMRgbp0nAfVV4iQQA-y-C77ceEhMSWWqx4cQVtCC5oVm-rSeW7q_bAfMCaaCP4-9HhCBX0ThLioTYmSpKwDnvQ_E=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Trans/lator",
+            "rating": 3.4285715,
+            "rating_users": 7,
+            "short_description": "Quickly translation inside your lovely Google Chrome™ browser",
+            "users": 2000,
+            "platform": ""
+          },
+          "ihmgiclibbndffejedjimfjmfoabpcke": {
+            "icon": "https://lh3.googleusercontent.com/KXmUddCrKPajehxu3yhF58trK067jabY8D9s8sUj5UKrA_9Fs331uSuLH7j59YWhsrAcEm-oeuyopvuoBSj6vSju=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Mate Translate – translator, dictionary",
+            "rating": 4.333127,
+            "rating_users": 6460,
+            "short_description": "Your all-in-one translator for web pages, highlighted text, & Netflix subtitles. Translate and learn words in 103 languages.",
+            "users": 400000,
+            "platform": ""
+          },
+          "jdbnofccmhefkmjbkkdkfiicjkgofkdh": {
+            "icon": "https://lh3.googleusercontent.com/4kT7DxtoPSmSLzTit1w2Vbx7b1L2zkASTrqGzEpBW-qs2EwmLYzBTyv0cvlGZo-rD-s732OIrUXX-C33RHPSFvOj=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Bookmark Sidebar",
+            "rating": 4.5657105,
+            "rating_users": 1499,
+            "short_description": "Adds a toggleable sidebar with all your bookmarks at the edge of your browser window.",
+            "users": 300000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "nglbhlefjhcjockellmeclkcijildjhi": {
+            "icon": "https://lh3.googleusercontent.com/PaTxDZWdqdX20w-iItrseijoLuZR19-YboOC3ST2mxs7R_0ePyQKaYdh96SFrexhIhbPPTymM6JSrDDblc6cJztBEQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Lingualeo Language Translator",
+            "rating": 3.8457398,
+            "rating_users": 2230,
+            "short_description": "Translate words & phrases from websites quickly. Add to your personal dictionary on Lingualeo.com and learn foreign languges easily!",
+            "users": 200000,
+            "platform": ""
+          },
+          "nnncnafimiibjpndjnomejlbjbpmdcmf": {
+            "icon": "https://lh3.googleusercontent.com/F07zwm0lqawxQu9estaV7S7KWsqXPwDpvhfAz1OK_slB9YY5JJkmM8ZfvHXGeKd_VoGdc_2cpGTlr1dyDX_wyqr_gg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Search date range shortcut",
+            "rating": 4.392857,
+            "rating_users": 28,
+            "short_description": "Add a date range shortcut to your Google search results.",
+            "users": 6000,
+            "platform": ""
+          },
+          "nnnkddnnlpamobajfibfdgfnbcnkgngh": {
+            "icon": "https://lh3.googleusercontent.com/MofNrxbJdgGqD3tWsKFnWNJ3txuyQKDbm_zxbNl9-_bc3XESFz6QODwiNnNc0z2WbgjiqSAbFSnSrgZu2z8pXG6s=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Infinity New Tab (Pro)",
+            "rating": 4.9496684,
+            "rating_users": 24577,
+            "short_description": "Infinity New Tab Pro allows you to customize your New Tab page",
+            "users": 500000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "onggcjioohnakflmkikdjjjopeoocfnn": {
+            "icon": "https://lh3.googleusercontent.com/21LdDe_1JQEU__l3G5Q101B8HfBDGTnG7UTacMsyl9XGxCDRQgFX9tWfLyGCp0306AEIKiUCzg=w128-h128-e365",
+            "name": "Simple Translator",
+            "rating": 3.6153846,
+            "rating_users": 13,
+            "short_description": "A simple tool that helps to translate texts from web pages by using www.translate.google.com. More details at…",
+            "users": 1000,
+            "platform": ""
+          },
+          "phlfmkfpmphogkomddckmggcfpmfchpn": {
+            "icon": "https://lh3.googleusercontent.com/w0Hbvv2L02nbkpOZEszDtOlYHPpBf-GUe2IHCwWINfPTxPW3H9D7DYdpgc9mhQYrXU9-mBhx=w128-h128-e365",
+            "name": "Context Menus",
+            "rating": 4.5126677,
+            "rating_users": 671,
+            "short_description": "The extended menu, integrated 300+ function menu and super drag links.",
+            "users": 51706,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pjnfggphgdjblhfjaphkjhfpiiekbbej": {
+            "icon": "https://lh3.googleusercontent.com/Ufj_cBX0e2yT9ku0dciOgZdb5Qdd8Y0ea3mmpSqv--URohAoxuk6q8pyC9CtmHdkFKGYP-hq-DtJ-L4AIHw9wucP=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Similar Pages",
+            "rating": 4.1755514,
+            "rating_users": 1088,
+            "short_description": "Discover webpages similar to the page you're currently browsing.",
+            "users": 100000,
+            "platform": ""
+          },
+          "pkmlbekmippmpokjnleaehkfhelgplli": {
+            "icon": "https://lh3.googleusercontent.com/0fX6lXrArF14FNf2B6VQrEgz3EDZUmv7IgOZ3JWahFKeH-V-8Ehabe77tE8Ap4DVIlxQ32X1mwA9y10tqXVUAJwcg2A=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text 2",
+            "rating": 3.8823528,
+            "rating_users": 17,
+            "short_description": "Translate selected text with Google Translator",
+            "users": 2000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 407,
+          "webstore": {
+            "address": 1,
+            "email": 1,
+            "last_updated": 5,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 9
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "",
+          "email": "",
+          "icon": "https://lh3.googleusercontent.com/iaysb2R0atkr6DbSAhdN4bStgkYqm3F9rNaCLc3DxKoxvUYTKe4XynKGgiPqtlatTdreiFLMUw=w128-h128-e365",
+          "last_updated": "2020-01-24",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [
+            "Your data on all websites"
+          ],
+          "privacy_policy": "",
+          "rating": 4.3622284,
+          "rating_users": 42672,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "207KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.8",
+      "platform": "Chrome"
+    },
+    {
+      "data": {
+        "csp": {
+          "object-src": [
+            "'self'"
+          ],
+          "script-src": [
+            "'self'",
+            "'unsafe-eval'",
+            "https://translate.googleapis.com"
+          ]
+        },
+        "dangerousfunctions": {
+          ".insertBefore(": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/bubble_compiled.js": [
+              69
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/options_compiled.js": [
+              53
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/popup_compiled.js": [
+              49
+            ]
+          },
+          "chrome.tabs.executeScript": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/main_compiled.js": [
+              37
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/popup_compiled.js": [
+              130,
+              131
+            ]
+          }
+        },
+        "entrypoints": {
+          "chrome.contextMenus.create": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/main_compiled.js": [
+              40
+            ]
+          },
+          "chrome.runtime.onConnect": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/main_compiled.js": [
+              39
+            ]
+          },
+          "chrome.runtime.onMessage": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/bubble_compiled.js": [
+              177
+            ],
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/main_compiled.js": [
+              39
+            ]
+          },
+          "chrome.tabs.query": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/popup_compiled.js": [
+              131
+            ]
+          },
+          "window.addEventListener": {
+            "/tmp/aapbdbdomjkkjkaonfhkkikfgjllcleb_2.0.9/main_compiled.js": [
+              14
+            ]
+          }
+        },
+        "extcalls": [
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com",
+          "https://translate.google.com/?source=gtx_m#",
+          "https://translate.google.com/translate_a/element.js?cb=",
+          "https://translate.google.com/?source=gtx_c#auto/",
+          "https://translate.googleapis.com/translate_a/l",
+          "https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=",
+          "https://translate.googleapis.com/translate_a/single",
+          "https://translate.google.com/?source=gtx_m#"
+        ],
+        "manifest": {
+          "author": {
+            "email": "thom@google.com"
+          },
+          "background": {
+            "persistent": false,
+            "scripts": [
+              "injection.js",
+              "main_compiled.js"
+            ]
+          },
+          "browser_action": {
+            "default_icon": {
+              "19": "icons/19.png",
+              "38": "icons/38.png"
+            },
+            "default_popup": "popup.html",
+            "default_title": "__MSG_2509634311667449183__"
+          },
+          "content_scripts": [
+            {
+              "all_frames": true,
+              "css": [
+                "bubble_gss.css"
+              ],
+              "js": [
+                "bubble_compiled.js"
+              ],
+              "matches": [
+                "<all_urls>"
+              ]
+            }
+          ],
+          "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+          "default_locale": "en",
+          "description": "__MSG_5636646071825253269__",
+          "icons": {
+            "16": "icons/16.png",
+            "19": "icons/19.png",
+            "32": "icons/32.png",
+            "38": "icons/38.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+          },
+          "manifest_version": 2,
+          "name": "__MSG_8969005060131950570__",
+          "options_page": "options.html",
+          "permissions": [
+            "activeTab",
+            "contextMenus",
+            "storage"
+          ],
+          "update_url": "https://clients2.google.com/service/update2/crx",
+          "version": "2.0.9",
+          "web_accessible_resources": [
+            "popup_css_compiled.css",
+            "options.html"
+          ]
+        },
+        "related": {
+          "aggiiclaiamajehmlfpkjmlbadmkledi": {
+            "icon": "https://lh3.googleusercontent.com/bSfxJZtVFV17c4haDidv-dizmZhSXJHB1yWhZEDAdhmCHYR0wS2ECnXMs6Bxj-JlMt8OyJ0KBsWoDwUjpOhWlu0G=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "TransOver",
+            "rating": 4.5683,
+            "rating_users": 1735,
+            "short_description": "Hover, click or select to translate (with text-to-speech). Translator.",
+            "users": 100000,
+            "platform": ""
+          },
+          "ambcfpifajmjgfdaafnjdollbfemaeeg": {
+            "icon": "https://lh3.googleusercontent.com/Xa2gZmlaL9Fqst0AjuAEb_Oh7zVfKL6tRD9umb18a2JzAQdQmbx6wry2_sDigzAfjkAsn8UhFGAKyST4LSaj7xTj-g=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "The Easy Translator",
+            "rating": 4.3382354,
+            "rating_users": 136,
+            "short_description": "Very easy in use translator.",
+            "users": 10000,
+            "platform": ""
+          },
+          "bcefgmhpbmghjcenbklchobmogjhaagl": {
+            "icon": "https://lh3.googleusercontent.com/mY39SViHxEu2CQdFM5jGo4J1VtFZcDgZblS3NQFzMkQkUqNt08m7X6N5QDrMmQliy10hj--NC0gvL1W7dsOOmUOpdwA=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Popup View for Google™ Translate",
+            "rating": 4.361446,
+            "rating_users": 83,
+            "short_description": "Access to a floating multilingual Google™ Translate popup on any webpage",
+            "users": 6000,
+            "platform": ""
+          },
+          "cilhimbmigbhkdchemhdcdhhbdccjfga": {
+            "icon": "https://lh3.googleusercontent.com/h2foyrS707M8LYRKuezcC03t9tLIFDkHveaI0FO2IjPB9O8kCa9chgSdd_paatnNr-EbBcjRT5O6YgnQBkxtAY2u5Ck=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Xpress – immediate translation!",
+            "rating": 4,
+            "rating_users": 5,
+            "short_description": "Quick translation of selected text on each page, full integration with google translate, word saving and enjoyable exercises.",
+            "users": 337,
+            "platform": ""
+          },
+          "cioclchdhgppnbpapkicbhlhbeldplld": {
+            "icon": "https://lh3.googleusercontent.com/PBFiG0rXAJm3GRl3gbrAlNi7VnK3NIJBbULBJ6r2oB2Q_cy6OJRHZbtsq0j4OaRAxqCGWhQiAjWyHDfq9W7l6CaiwrY=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "One-Click Translate Selection",
+            "rating": 2.9545455,
+            "rating_users": 22,
+            "short_description": "Simply select some text and translate from context menu",
+            "users": 9000,
+            "platform": ""
+          },
+          "condlopdddofpgcdjfnoepbdkcgckmgb": {
+            "icon": "https://lh3.googleusercontent.com/wddpHbYa27PjD492WEf_3IyO-O_pce5vn9qYnr8IECYuDbXO3cWu-55FcAW4HftGR-JHw5qOWa_ertBSzak4tYeB7Vk=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4.148148,
+            "rating_users": 27,
+            "short_description": "Right Click to translate selected text using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "dipiagiiohfljcicegpgffpbnjmgjcnf": {
+            "icon": "https://lh3.googleusercontent.com/2GLF1830Q703iBn-gk3SIEs5bcizzNjY6ANBvdZ3PvhloLqEk0SPWDEJXrhQK4tl24rJeo6t0j5UPAlqaDq3RJ76BQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Rememberry - Translate and Memorize",
+            "rating": 4.5685787,
+            "rating_users": 802,
+            "short_description": "Translate words and phrases while browsing the web, and easily replenish your foreign languages dictionary using flashcards.",
+            "users": 100000,
+            "platform": ""
+          },
+          "eemleifbnibgnoifdjohpchdemidjibj": {
+            "icon": "https://lh3.googleusercontent.com/DI4T-Ed4PBeh5HJOX4e6Sgw69Hi0khzexGeedsOLFHpGJ6feayIbQEljNtMyoRfQcJLDpISv9_pM5eam9siUZiTe8Q=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Add links to change languages on Google™",
+            "rating": 4.0833335,
+            "rating_users": 60,
+            "short_description": "In order to add links, specify the languages in the option page.",
+            "users": 10000,
+            "platform": ""
+          },
+          "fbimffnjoeobhjhochngikepgfejjmgj": {
+            "icon": "https://lh3.googleusercontent.com/W3NrVmqySDy3vkQbf69qtVTn36w0ENye8Yn--djZGO8EaiG8U-wO0NwjTxRmuAP-a8VHuCnm7bRVfTSEi3nItUetdQ=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text",
+            "rating": 3.8047493,
+            "rating_users": 758,
+            "short_description": "Translate selected text with Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "gfoljmaemjkooglhbobaiihlhlcdfeif": {
+            "icon": "https://lh3.googleusercontent.com/9DvWQEHE9gh_4BV_boQjZNYb9AhGHd5VsxWDA2YnGeVvzMN8ed-wrTY4nVa1jmb92q6Gqd5RHVEbv1zAnCd0kI7y3Q=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "GTranslate",
+            "rating": 4.019231,
+            "rating_users": 52,
+            "short_description": "RightClick google translate",
+            "users": 3000,
+            "platform": ""
+          },
+          "hkbmajmmaeonfhjdcofabfilgfigpbao": {
+            "icon": "https://lh3.googleusercontent.com/YJdjjB31lEAN7EYolhOtYSnw3nxPfoNHMWbzOMmXlo92z-3lIyI87Fkc5yvVe-XhZQaf7lPiWrzjYZEFG-Sr-sCYh9c=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Select to Translate - Translator",
+            "rating": 3.8715596,
+            "rating_users": 327,
+            "short_description": "Translate the selected text with Google Translate",
+            "users": 60000,
+            "platform": ""
+          },
+          "hllpgofookedglcfhdimjhaahggbnlbe": {
+            "icon": "https://lh3.googleusercontent.com/X9blRv-u3k9lpVIcyMuH6Nx8NgCBpNvZUP2Jc1RTL3WOPrHa9_7ob1Ac0KYt9ZM3sgbVZ0_nhJzymNSSrRGZPY91sg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translator",
+            "rating": 4,
+            "rating_users": 27,
+            "short_description": "Translates selected text into opted language.",
+            "users": 2000,
+            "platform": ""
+          },
+          "igjfjhnllcnodejjmjnofggkcpbofojp": {
+            "icon": "https://lh3.googleusercontent.com/VFtUMRgbp0nAfVV4iQQA-y-C77ceEhMSWWqx4cQVtCC5oVm-rSeW7q_bAfMCaaCP4-9HhCBX0ThLioTYmSpKwDnvQ_E=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Trans/lator",
+            "rating": 3.4285715,
+            "rating_users": 7,
+            "short_description": "Quickly translation inside your lovely Google Chrome™ browser",
+            "users": 2000,
+            "platform": ""
+          },
+          "ihmgiclibbndffejedjimfjmfoabpcke": {
+            "icon": "https://lh3.googleusercontent.com/KXmUddCrKPajehxu3yhF58trK067jabY8D9s8sUj5UKrA_9Fs331uSuLH7j59YWhsrAcEm-oeuyopvuoBSj6vSju=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Mate Translate – translator, dictionary",
+            "rating": 4.333127,
+            "rating_users": 6460,
+            "short_description": "Your all-in-one translator for web pages, highlighted text, & Netflix subtitles. Translate and learn words in 103 languages.",
+            "users": 400000,
+            "platform": ""
+          },
+          "ijllcpnolfcooahcekpamkbidhejabll": {
+            "icon": "https://lh3.googleusercontent.com/3fQMRj3gigg_kS0CZoSYdclwWG3rjkhZGAvn7YYD0yXEPkvDfwAcCkZ1uypUmVeRo-IPoxb2ABvP0K8ZvgIr7R3uwzI=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "SimpRead - Reader View",
+            "rating": 4.811463,
+            "rating_users": 1989,
+            "short_description": "Immersion-reading mode of Chrome extensions, similar to Safari read mode.",
+            "users": 100000,
+            "platform": ""
+          },
+          "jdbnofccmhefkmjbkkdkfiicjkgofkdh": {
+            "icon": "https://lh3.googleusercontent.com/4kT7DxtoPSmSLzTit1w2Vbx7b1L2zkASTrqGzEpBW-qs2EwmLYzBTyv0cvlGZo-rD-s732OIrUXX-C33RHPSFvOj=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Bookmark Sidebar",
+            "rating": 4.5657105,
+            "rating_users": 1499,
+            "short_description": "Adds a toggleable sidebar with all your bookmarks at the edge of your browser window.",
+            "users": 300000,
+            "platform": ""
+          },
+          "jomhcfmjbfkigcepcfkcpknnppmdopmc": {
+            "icon": "https://lh3.googleusercontent.com/-gMdyjGduc5TNH-jIG2YE8OL2UffGuQbXzs7EPMml6JyD_XTRDw6X543R5rQgae9DaW9Em0kDaqnlht0NG9xFZcVTg=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Translate Plus",
+            "rating": 4.5342107,
+            "rating_users": 380,
+            "short_description": "Translate the definitions by google translate.",
+            "users": 80000,
+            "platform": ""
+          },
+          "nnnkddnnlpamobajfibfdgfnbcnkgngh": {
+            "icon": "https://lh3.googleusercontent.com/MofNrxbJdgGqD3tWsKFnWNJ3txuyQKDbm_zxbNl9-_bc3XESFz6QODwiNnNc0z2WbgjiqSAbFSnSrgZu2z8pXG6s=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Infinity New Tab (Pro)",
+            "rating": 4.9496684,
+            "rating_users": 24577,
+            "short_description": "Infinity New Tab Pro allows you to customize your New Tab page",
+            "users": 500000,
+            "platform": ""
+          },
+          "noaijdpnepcgjemiklgfkcfbkokogabh": {
+            "icon": "https://lh3.googleusercontent.com/5BdJZ8RtA9D8gzY63BejGvZ7Av5RX0iYXYJ0Gv8yoXwK0Qs4vQvafb7eEmfknWvQVU6zGsDw7cs-hxvBJkpuW4Go=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "ImTranslator: Translator, Dictionary, TTS",
+            "rating": 4.391173,
+            "rating_users": 4962,
+            "short_description": "Translator, Dictionary, Voice",
+            "users": 1000000,
+            "platform": ""
+          },
+          "nonmafimegllfoonjgplbabhmgfanaka": {
+            "icon": "https://lh3.googleusercontent.com/F-KnoQE2VyVM0yZZ4NlzBXpr9u9Uo1CKWtTFZ4QqfLbQlQXkIRGKEhQEuh26DLcH0cqCSua5P4Nfid9kuEer6Jxc=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "谷歌上网助手",
+            "rating": 4.2643228,
+            "rating_users": 768,
+            "short_description": "专门为科研、外贸、跨境电商、海淘人员、开发人员服务的上网加速工具，chrome内核浏览器专用!可以解决chrome扩展无法自动更新的问题，同时可>以访问谷歌google搜索，gmail邮箱，google+等谷歌产品",
+            "users": 200000,
+            "platform": ""
+          },
+          "onggcjioohnakflmkikdjjjopeoocfnn": {
+            "icon": "https://lh3.googleusercontent.com/21LdDe_1JQEU__l3G5Q101B8HfBDGTnG7UTacMsyl9XGxCDRQgFX9tWfLyGCp0306AEIKiUCzg=w128-h128-e365",
+            "name": "Simple Translator",
+            "rating": 3.6153846,
+            "rating_users": 13,
+            "short_description": "A simple tool that helps to translate texts from web pages by using www.translate.google.com. More details at…",
+            "users": 1000,
+            "platform": ""
+          },
+          "piojkjkndneggfaibepkmabjnkjlhlmk": {
+            "icon": "https://lh3.googleusercontent.com/3ERzZjtIZVZRi0d_3by218UpNABPoypN_IZA1qq7D5_415BTVslZtXQc9unEmrwaZF7a7ngYabSJcOoYNx7fykHS=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Right Click Translate",
+            "rating": 4.325843,
+            "rating_users": 89,
+            "short_description": "Right Click to translate selected text into a new Tab using Google Translate",
+            "users": 100000,
+            "platform": ""
+          },
+          "pjnfggphgdjblhfjaphkjhfpiiekbbej": {
+            "icon": "https://lh3.googleusercontent.com/Ufj_cBX0e2yT9ku0dciOgZdb5Qdd8Y0ea3mmpSqv--URohAoxuk6q8pyC9CtmHdkFKGYP-hq-DtJ-L4AIHw9wucP=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Google Similar Pages",
+            "rating": 4.1755514,
+            "rating_users": 1088,
+            "short_description": "Discover webpages similar to the page you're currently browsing.",
+            "users": 100000,
+            "platform": ""
+          },
+          "pkmlbekmippmpokjnleaehkfhelgplli": {
+            "icon": "https://lh3.googleusercontent.com/0fX6lXrArF14FNf2B6VQrEgz3EDZUmv7IgOZ3JWahFKeH-V-8Ehabe77tE8Ap4DVIlxQ32X1mwA9y10tqXVUAJwcg2A=w128-h128-e365-rj-sc0x00ffffff",
+            "name": "Translate Selected Text 2",
+            "rating": 3.8823528,
+            "rating_users": 17,
+            "short_description": "Translate selected text with Google Translator",
+            "users": 2000,
+            "platform": ""
+          }
+        },
+        "risk": {
+          "csp": {
+            "child-src": 25,
+            "connect-src": 25,
+            "font-src": 25,
+            "form-action": 25,
+            "frame-ancestors": 25,
+            "frame-src": 25,
+            "img-src": 25,
+            "manifest-src": 25,
+            "media-src": 25,
+            "object-src": 1,
+            "plugin-types": 25,
+            "sandbox": 25,
+            "script-src": 7,
+            "strict-dynamic": 25,
+            "style-src": 25,
+            "total": 383,
+            "upgrade-insecure-requests": 25,
+            "worker-src": 25
+          },
+          "permissions": {
+            "total": 15
+          },
+          "total": 406,
+          "webstore": {
+            "address": 1,
+            "last_updated": 5,
+            "privacy_policy": 1,
+            "support_site": 1,
+            "total": 8
+          },
+          "metadata": {}
+        },
+        "webstore": {
+          "address": "",
+          "email": "thom@google.com",
+          "icon": "https://lh3.googleusercontent.com/3ZU5aHnsnQUl9ySPrGBqe5LXz_z9DK05DEfk10tpKHv5cvG19elbOr0BdW_k8GjLMFDexT2QHlDwAmW62iLVdek--Q=w128-h128-e365-rj-sc0x00ffffff",
+          "last_updated": "2021-01-15",
+          "name": "Google Translate",
+          "offered_by": "translate.google.com",
+          "permission_warnings": [
+            "Your data on all websites"
+          ],
+          "privacy_policy": "",
+          "rating": 4.352628,
+          "rating_users": 43604,
+          "short_description": "View translations easily as you browse the web. By the Google Translate team.",
+          "size": "196KiB",
+          "support_site": "",
+          "users": 10000000,
+          "version": "",
+          "website": "http://translate.google.com/",
+          "type": "Extension",
+          "price": ""
+        }
+      },
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "version": "2.0.9",
+      "platform": "Chrome"
+    }
+  ]
