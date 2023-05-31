@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "crxcavator"
+name = "crxcavatorpy"
 version = "0.1.0"
 description = "Python module for interacting with the Crxcavator api"
 authors = ["Garrett Primm <garrett@alabamacloudsecurity.com>"]
