@@ -50,7 +50,7 @@ def main():
             type=str
         )
         args = parser.parse_args()
-        reports = api.get_all_reports(
+        reports = api.get_report(
             args.extension_id, args.extension_version)
         print(reports)
 
