@@ -1,0 +1,29 @@
+name: Upload Python Package
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    environment: release
+    runs-on: ubuntu-latest
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pipx install poetry==1.5.0
+          poetry install --without test,dev
+      - name: Build package
+        run: poetry build
+      - name: Publish package
+        uses: pypa/gh-action-pypi-publish@release/v1
+    

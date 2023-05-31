@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "crxcavator"
+version = "0.1.0"
+description = "Python module for interacting with the Crxcavator api"
+authors = ["Garrett Primm <garrett@alabamacloudsecurity.com>"]
+readme = "README.md"
+packages = [
+    { include = "crxcavator" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+argparse = "^1.4.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+artifacts-keyring = "^0.3.3"
+keyring = "^23.13.1"
+azure-devops-artifacts-helpers = "^1.2.0"
+twine = "^4.0.2"
+pytest-azurepipelines = "^1.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+*.csv
+*.xlsx
+*.json
+**__pycache__
+**.egg-info
+build/
+dist/
+**pytest_cache
+.devcontainer/
+.coverage
+coverage.*
